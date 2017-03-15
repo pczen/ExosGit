@@ -1,0 +1,83 @@
+body
+{
+	background: url("images/Aion.png") fixed no-repeat;
+}
+
+.imageflottante
+{
+	float: right;
+	box-shadow: 2px 2px 4px purple;
+}
+
+.dessous
+{
+	clear: both;
+}
+
+@font-face {
+    font-family: 'alluraregular';
+    src: url('fonts/allura-regular-webfont.eot');
+    src: url('fonts/allura-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/allura-regular-webfont.woff2') format('woff2'),
+         url('fonts/allura-regular-webfont.woff') format('woff'),
+         url('fonts/allura-regular-webfont.ttf') format('truetype'),
+         url('fonts/allura-regular-webfont.svg#alluraregular') format('svg');
+}
+
+h1, .introduction
+{
+	color: #663399;
+	text-align: center;
+	font-family: 'alluraregular', Verdana, sans-serif;
+}
+
+h1
+{
+	font-size: 3em;
+	text-shadow: 2px 2px 4px purple;
+}
+
+.introduction
+{
+	font-size: 2em;
+	text-shadow: 2px 2px 2px #663399;
+}
+
+h2
+{
+	color: #663399;
+	font-size: 1.8em;
+	font-family: Verdana, sans-serif;
+	font-style: italic;
+}
+
+h3
+{
+	color: purple;
+	font-style: italic;
+}
+
+#bloc_page
+{
+	background-image: url("images/lisere.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 5% 100%;
+	min-width: 100%;
+	
+}
+section
+{
+	display: flex;
+	display-content: column;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+
+.corps
+{
+	display: block;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
