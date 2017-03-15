@@ -1,6 +1,7 @@
 body
 {
-	background: url("images/Aion.png") fixed no-repeat;
+	background: url("images/Aion.png") center no-repeat;
+	background-size: 100% 100%;
 }
 
 .imageflottante
@@ -46,38 +47,74 @@ h1
 h2
 {
 	color: #663399;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	font-family: Verdana, sans-serif;
 	font-style: italic;
 }
 
-h3
+.h3
 {
 	color: purple;
 	font-style: italic;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-left: 5%; 
 }
 
-#bloc_page
-{
-	background-image: url("images/lisere.png");
-	background-position: left;
-	background-repeat: no-repeat;
-	background-size: 5% 100%;
-	min-width: 100%;
-	
-}
 section
 {
-	display: flex;
-	display-content: column;
-	justify-content: space-around;
-	margin-top: 5%;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 2%;
 }
 
-.corps
+#liseré, #contenu
 {
-	display: block;
-	margin-left: 8%;
-	margin-right: 8%;
+    display: inline-block;
+    vertical-align: top;
 }
 
+#liseré
+{   
+    width: 5%;
+    margin-right: 3%;
+    height: 600px;
+    background-image: url('images/lisere.png');
+    border-radius: 10px;
+}
+
+#contenu
+{
+    width: 85%;
+}
+
+/* Nouvelles règles si la fenêtre fait moins de 1024px de large */
+
+@media screen and (max-width: 1024px)
+{
+	#contenu
+	{
+		width: auto;
+	}
+	img
+	{
+		max-width: 100%,
+		height: auto;
+	}
+	#liseré
+	{
+		display: none;
+	}
+	section	
+	{
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		margin-right: 0px;
+	}
+	section, h2, .h3, p, a
+	{
+		font-size: 100%;
+	}
+}
