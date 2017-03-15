@@ -1,2 +1,0 @@
-# ExosGit
-Exercices de cours
